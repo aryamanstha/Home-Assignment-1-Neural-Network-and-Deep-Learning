@@ -81,6 +81,30 @@ A simple feedforward neural network:
 - Logs are stored in `logs/fit/` with timestamp-based subdirectories
 - Records training/validation loss and accuracy for each epoch
 
+**How to Run TensorBoard:**
+
+1. **Open Terminal/Command Prompt** in the project directory
+
+2. **Launch TensorBoard** with the following command:
+   ```bash
+   tensorboard --logdir=logs/fit
+   ```
+
+3. **Access TensorBoard** by opening your web browser and navigating to:
+   ```
+   http://localhost:6006
+   ```
+
+4. **Explore the Metrics:**
+   - View training and validation accuracy curves
+   - Monitor loss values across epochs
+   - Compare different run performances
+   - Analyze scalar metrics, histograms, and distributions
+
+5. **Stop TensorBoard** by pressing `Ctrl+C` in the terminal
+
+**Note:** TensorBoard automatically updates as new logs are generated during training, allowing real-time monitoring of model performance.
+
 **Training Results & Analysis:**
 
 1. **Overfitting Patterns Observed:**
