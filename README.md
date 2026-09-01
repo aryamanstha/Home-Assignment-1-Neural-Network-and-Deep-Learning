@@ -1,6 +1,7 @@
 # Home Assignment 1: Neural Network and Deep Learning 
 
 **Name:** Aryaman Shrestha 
+
 **Student ID:** 700788013 
 
 ## Task 1: Tensor Manipulations & Reshaping
@@ -13,15 +14,6 @@
 - **Reshaping:** Transformed the tensor from (4, 6) → (2, 3, 4) using `tf.reshape()`
 - **Transposing:** Rearranged dimensions from (2, 3, 4) → (3, 2, 4) using `tf.transpose()` with permutation [1, 0, 2]
 - **Broadcasting:** Demonstrated how a smaller tensor (1, 4) can be broadcast to match larger tensor shapes in arithmetic operations
-
-**Broadcasting Explanation:**
-TensorFlow broadcasting allows tensors with different shapes to work together seamlessly. The key rules are:
-1. Dimensions are compared from right to left
-2. Compatible dimensions are either equal or one of them is 1
-3. Dimensions of size 1 are expanded to match the other tensor
-4. Missing leading dimensions are treated as size 1
-
-This enables efficient operations without explicit replication of data.
 
 ---
 
@@ -106,9 +98,6 @@ A simple feedforward neural network:
    - Beyond the optimal point, further training causes the model to overfit
    - Training accuracy approaches 100% while validation accuracy stagnates or decreases
    - Ideal training stops when validation performance stops improving
-
-**Test Performance:**
-- Model evaluated on held-out test set for unbiased accuracy assessment
 
 ---
 
